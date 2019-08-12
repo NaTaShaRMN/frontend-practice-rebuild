@@ -1,0 +1,128 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: #343434;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+ul.menu {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 7.5em;
+    margin: 0;
+    /* width: 65%; */
+    padding-left: 27%;
+}
+
+.address {
+    display: flex;
+    margin-left: 7.7em;
+    /* margin-top: 0.5em; */
+}
+
+.address>li {
+    margin-left: 1.3em;
+    color: #bababa;
+    word-spacing: 4px;
+    font-family: serif;
+    font-size: 0.82em;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.address>li:hover,
+.social-address>li>i:hover {
+    color: white;
+}
+
+.social-address {
+    display: flex;
+    margin-right: 9.4em;
+    /* margin-top: 1em; */
+}
+
+.social-address>li {
+    margin: 0 0.4em;
+    color: #bababa;
+}
+
+.address>li>i {
+    padding-right: 0.4em;
+    font-size: 11px;
+}
+
+.social-address>li>i {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.logo>img {
+    margin-left: 9.7em;
+    padding: 2.5em 0;
+    /* width: 15%; */
+}
+
+.menu>li {
+    padding: 3.5em 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+li.btn-search {
+    margin-left: 4em;
+}
+
+.menu>li a {
+    color: #404040;
+    text-decoration: none;
+}
+
+.menu>li:hover,
+.menu>li:hover a {
+    background-color: #03a9f4;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contactsss {
+    margin-right: 1.3em;
+}
+
+.nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+}
+
+nav.nav span {
+    margin: 3em 9.5em 3em 3em;
+    cursor: pointer;
+}
+
+nav.nav img {
+    margin: 2em 9em 2em 9em;
+    /* height: 29px; */
+}
+
+.nav-mobile {
+    display: none;
+}
+
+section.slide-mobile {
+    display: none;
+}
