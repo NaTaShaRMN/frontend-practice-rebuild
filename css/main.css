@@ -156,6 +156,11 @@
                     background-size: cover;
                 }
                 
+                .read-more {
+                    padding-top: 1em;
+                    cursor: pointer;
+                }
+                
                 li.service-content-item>p {
                     font-size: 0.9em;
                     margin: 0.7em 0 2em;

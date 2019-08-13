@@ -20,3 +20,7 @@ function showMenu() {
         menu.style.display = "none";
 }
 document.querySelector(".fas.fa-bars").addEventListener("click", showMenu);
+document.querySelector(".fas.fa-bars").addEventListener("mouseover", showMenu);
+// document.querySelector(".menu").addEventListener("mouseout", function() {
+//     document.querySelector("ul.menu").style.display = "none";
+// });
