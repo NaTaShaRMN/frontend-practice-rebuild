@@ -496,8 +496,8 @@
                 
                 ul.list-job>li>i {
                     font-size: 1.3em;
-                    padding-top: 0.5em;
-                    padding-right: 0.3em;
+                    position: absolute;
+                    top: 11px;
                 }
                 
                 ul.project-images {
@@ -892,4 +892,24 @@ padding-right: 30px; */
                 
                 .active:before {
                     content: "/2212";
+                }
+                
+                .to-left {
+                    position: relative;
+                    animation: animateleft 0.4s
+                }
+                
+                @keyframes animateleft {
+                    from {
+                        left: -300px;
+                        opacity: 0
+                    }
+                    to {
+                        left: 0;
+                        opacity: 1
+                    }
+                }
+                
+                .list-job>li {
+                    position: relative;
                 }

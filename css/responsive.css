@@ -24,7 +24,7 @@
     .header-content,
     .content,
     .footer-content {
-        width: 1366px;
+        width: 1300px;
         margin: 0 auto;
     }
 }
@@ -36,6 +36,9 @@
     .service-content>li {
         width: 100%;
     }
+    ul.list-icon li {
+        width: 20.28%;
+    }
     li.service-content-item>h2 {
         font-size: 2.4em;
     }
@@ -44,7 +47,7 @@
         font-size: 1.5em;
     }
     .banner-content {
-        padding-bottom: 3em;
+        padding-bottom: 9em;
     }
     .banner-content>h2 {
         font-size: 2em;
@@ -63,7 +66,7 @@
         display: none;
     }
     ul.project-images {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         width: 100%;
     }
     .container {
@@ -94,21 +97,25 @@
         width: 90%;
         height: 10px;
         object-fit: cover;
+        margin-top: 7px;
     }
     li:nth-child(4).skill-percent>div>img {
         width: 80%;
         height: 10px;
         object-fit: cover;
+        margin-top: 7px;
     }
     li:nth-child(6).skill-percent>div>img {
         width: 55%;
         height: 10px;
         object-fit: cover;
+        margin-top: 7px;
     }
     li:nth-child(8).skill-percent>div>img {
         width: 60%;
         height: 10px;
         object-fit: cover;
+        margin-top: 7px;
     }
     ul.list-job {
         grid-template-columns: auto;
@@ -118,6 +125,7 @@
     }
     ul.leader-list>li {
         display: block;
+        display: flex;
     }
     ul.leader-list>li:nth-child(odd)>.leader-item-text {
         text-align: left;
@@ -148,8 +156,8 @@
         margin-bottom: 3em;
     }
     ul.list-logo>li {
-        width: 100%;
-        margin-bottom: 2em;
+        width: 40%;
+        margin: 1em;
     }
     ul.list-logo img {
         width: 100%;
@@ -157,7 +165,7 @@
     .about-website-list>li:nth-child(1),
     .about-website-list>li:nth-child(2),
     .about-website-list>li:nth-child(4) {
-        width: 100% !important;
+        width: 75% !important;
         background-color: #313131 !important;
     }
     .about-website-list>li:nth-child(3) {
@@ -196,7 +204,7 @@
         background-color: black;
     }
     nav.nav {
-        background-color: black;
+        background-color: #ffffff;
         height: auto;
         position: relative;
     }
@@ -262,6 +270,9 @@
     .social-address {
         margin: auto auto;
     }
+    ul.activities-list>li:last-child {
+        margin: 0 auto;
+    }
     .service-content>li {
         width: 50%;
     }
@@ -298,8 +309,8 @@
         width: 50%;
     }
     ul.list-logo>li {
-        width: 47%;
-        margin-right: 10px;
+        width: 40%;
+        margin: 1em;
     }
     .container {
         margin: 0 auto;
@@ -326,7 +337,7 @@
         width: 436px;
         text-align: center;
         margin: 0 auto;
-        /* padding: 0; */
+        padding: 0;
     }
     ul.leader-list>li:nth-child(odd)>.leader-item-text {
         padding-right: 0;
@@ -380,7 +391,7 @@
     }
     .banner-content {
         padding-top: 7em;
-        padding-bottom: 29em;
+        padding-bottom: 20em;
     }
     .banner-content>h2 {
         font-size: 1.9em;
@@ -439,10 +450,13 @@
     }
     ul.list-logo>li {
         width: 15%;
-        margin-right: 3em;
+        margin-right: 1em;
     }
     ul.list-logo {
         margin-left: 1em;
+    }
+    .company-skill-list {
+        margin-top: -0.3em;
     }
     .about-website-list>li:nth-child(1) {
         width: 25% !important;
@@ -451,7 +465,7 @@
         width: 28% !important;
     }
     .about-website-list>li:nth-child(3) {
-        width: 13% !important;
+        width: 14% !important;
     }
     .about-website-list>li:nth-child(4) {
         width: 33% !important;
@@ -466,7 +480,7 @@
         /* width: 69%; */
         margin-right: 7.5em;
         margin: 0;
-        padding-left: 25em;
+        padding-left: 28em;
     }
     .menu-desktop>li {
         padding: 3.5em 1.2em 3.5em 1.2em;
@@ -519,11 +533,11 @@
         color: white;
     }
     .social-address {
-        margin: auto 142px;
+        margin: auto 107px;
     }
     nav.menu-desktop i {
-        padding: 3.3em 2em;
-        margin-left: 7em;
+        padding: 3.3em 3em;
+        margin-left: 4em;
         cursor: pointer;
     }
 }
@@ -537,7 +551,4 @@ nav.menu-desktop a {
         padding: 3.3em 0;
         margin-left: 0;
     }
-}
-
-
 }
