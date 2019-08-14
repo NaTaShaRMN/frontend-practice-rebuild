@@ -36,6 +36,9 @@
     .service-content>li {
         width: 100%;
     }
+    .nav-mobile>i {
+        color: white;
+    }
     ul.list-icon li {
         width: 20.28%;
     }
@@ -171,7 +174,7 @@
     .about-website-list>li:nth-child(1),
     .about-website-list>li:nth-child(2),
     .about-website-list>li:nth-child(4) {
-        width: 75% !important;
+        width: 90% !important;
         background-color: #313131 !important;
     }
     .about-website-list>li:nth-child(3) {
@@ -317,7 +320,7 @@
     }
     ul.list-logo>li {
         width: 40%;
-        margin: 1em;
+        margin: 1em 2em;
     }
     .container {
         margin: 0 auto;
@@ -572,4 +575,8 @@ nav.menu-desktop a {
     .list-job {
         grid-template-columns: auto auto !important;
     }
+}
+
+.about-website-list>li {
+    order: 10;
 }

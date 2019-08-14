@@ -11,12 +11,14 @@
                 
                 ul.list-icon li {
                     width: 13.28%;
+                    margin-right: 0.5em;
                 }
                 
                 ul.list-icon i {
                     padding: 0.7em;
                     border-radius: 50%;
                     border: 1px solid;
+                    width: 37px;
                     cursor: pointer;
                 }
                 
@@ -719,6 +721,7 @@
                 .leader-item-image>img {
                     border-radius: 50%;
                     width: 130px;
+                    height: 130px;
                     cursor: pointer;
                 }
                 
