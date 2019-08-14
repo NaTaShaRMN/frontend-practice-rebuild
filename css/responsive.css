@@ -42,10 +42,18 @@
     li.service-content-item>h2 {
         font-size: 2.4em;
     }
+    section.leader>h2 {
+        font-size: 2.2em;
+        padding: 1.5em 0 0em;
+        letter-spacing: 0.03em;
+    }
     li.service-content-item>p,
     li.service-content-item>small {
         font-size: 1.5em;
     }
+    /* .image-box {
+        width: 100%;
+    } */
     .banner-content {
         padding-bottom: 9em;
     }
@@ -94,7 +102,7 @@
         width: 100%;
     }
     li:nth-child(2).skill-percent>div>img {
-        width: 90%;
+        width: 89%;
         height: 10px;
         object-fit: cover;
         margin-top: 7px;
@@ -129,6 +137,7 @@
     }
     ul.leader-list>li:nth-child(odd)>.leader-item-text {
         text-align: left;
+        padding-right: 0em;
     }
     ul.leader-list>li:nth-child(even)>.leader-item-text {
         padding: 0;
@@ -148,9 +157,6 @@
     ul.activities-list>li {
         width: 100%;
         margin-bottom: 2em;
-    }
-    ul.activities-list>li:last-child {
-        display: block;
     }
     ul.activities-list {
         margin-bottom: 3em;
@@ -270,9 +276,6 @@
     .social-address {
         margin: auto auto;
     }
-    ul.activities-list>li:last-child {
-        margin: 0 auto;
-    }
     .service-content>li {
         width: 50%;
     }
@@ -306,7 +309,11 @@
         padding-bottom: 2em;
     }
     ul.activities-list>li {
-        width: 50%;
+        width: 100%;
+        display: flex;
+    }
+    .image-box-content {
+        padding-left: 3em;
     }
     ul.list-logo>li {
         width: 40%;
@@ -358,6 +365,9 @@
         display: flex;
         padding: 0;
     }
+    ul.list-job {
+        grid-template-columns: auto auto auto !important;
+    }
     .read-more {
         display: none;
     }
@@ -369,6 +379,9 @@
     }
     .slide {
         display: block;
+    }
+    section.leader>h2 {
+        padding: 2.5em 0;
     }
     section.slide-mobile {
         display: none;
@@ -441,9 +454,11 @@
     }
     ul.activities-list>li {
         width: 33.3%;
-    }
-    ul.activities-list>li:last-child {
+        padding: 1em;
         display: block;
+    }
+    .image-box-content {
+        padding-left: 0;
     }
     ul.list-logo>li:last-child {
         display: block;
@@ -546,9 +561,15 @@ nav.menu-desktop a {
     padding: 3.3em 1em;
 }
 
-@media screen and (max-width:1165px) {
+@media screen and (max-width:1196px) {
     nav.menu-desktop i {
         padding: 3.3em 0;
         margin-left: 0;
+    }
+}
+
+@media screen and (min-width:629px) {
+    .list-job {
+        grid-template-columns: auto auto !important;
     }
 }

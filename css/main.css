@@ -76,6 +76,7 @@
                 
                 li.skill-percent span {
                     float: right;
+                    padding-top: 4px;
                 }
                 
                 li.skill-percent>div {
@@ -905,11 +906,28 @@ padding-right: 30px; */
                         opacity: 0
                     }
                     to {
-                        left: 0;
+                        left: 27px;
                         opacity: 1
                     }
                 }
                 
+                .image-box-content span {
+                    color: #03a9f4;
+                }
+                
+                .image-box:hover {
+                    transform: scale(1.1);
+                    transition: 0.4s ease;
+                }
+                
                 .list-job>li {
                     position: relative;
+                }
+                
+                .slide-mobile-content {
+                    padding: 1.5em 1em 1.5em 2em;
+                }
+                
+                ul.list-logo img {
+                    cursor: pointer;
                 }

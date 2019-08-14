@@ -24,3 +24,8 @@ document.querySelector(".fas.fa-bars").addEventListener("mouseover", showMenu);
 // document.querySelector(".menu").addEventListener("mouseout", function() {
 //     document.querySelector("ul.menu").style.display = "none";
 // });
+
+function imageHover() {
+    var image = document.querySelector("ul.project-images>li>img");
+    image.setAttribute("src", "images/image_hover.png");
+};
