@@ -903,13 +903,29 @@ padding-right: 30px; */
                     animation: animateleft 0.4s
                 }
                 
+                .to-top {
+                    position: relative;
+                    animation: animateTop 0.4s;
+                }
+                
+                @keyframes animateTop {
+                    from {
+                        top: -300px;
+                        opacity: 0;
+                    }
+                    to {
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
+                
                 @keyframes animateleft {
                     from {
                         left: -300px;
                         opacity: 0
                     }
                     to {
-                        left: 27px;
+                        left: 0;
                         opacity: 1
                     }
                 }
@@ -933,4 +949,20 @@ padding-right: 30px; */
                 
                 ul.list-logo img {
                     cursor: pointer;
+                }
+                
+                .w3-animate-top {
+                    position: relative;
+                    animation: animatetop 0.4s;
+                }
+                
+                @keyframes animatetop {
+                    from {
+                        top: -300px;
+                        opacity: 0
+                    }
+                    to {
+                        top: 0;
+                        opacity: 1
+                    }
                 }

@@ -36,6 +36,9 @@
     .service-content>li {
         width: 100%;
     }
+    .btn-search {
+        opacity: 0;
+    }
     .nav-mobile>i {
         color: white;
     }
@@ -208,9 +211,9 @@
         display: none;
         position: absolute;
         bottom: -201px;
-        left: 30px;
+        left: 0;
         padding: 0;
-        background-color: black;
+        background-color: #000000d4;
     }
     nav.nav {
         background-color: #ffffff;
@@ -253,7 +256,11 @@
         width: 100%;
         padding-left: 1em;
         display: none;
+        color: white;
+        border-radius: 8px;
+        background-color: #3129a478;
         font-family: myriad pro;
+        font-size: 1.2em;
     }
     button.btn-question {
         margin-bottom: 1em;

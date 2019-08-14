@@ -15,7 +15,8 @@ ul.menu {
     flex-wrap: wrap;
     margin-right: 7.5em;
     margin: 0;
-    /* width: 65%; */
+    width: 100%;
+    text-align: center;
     padding-left: 27%;
 }
 
