@@ -950,6 +950,11 @@ padding-right: 30px; */
                     padding: 1.5em 1em 1.5em 2em;
                 }
                 
+                .slide-mobile {
+                    background-image: url("../images/bg-slide1.jpg");
+                    background-size: cover;
+                }
+                
                 ul.list-logo img {
                     cursor: pointer;
                 }
