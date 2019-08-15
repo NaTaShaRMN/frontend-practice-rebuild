@@ -161,8 +161,8 @@
         margin: 0;
     }
     ul.activities-list>li {
-        width: 100%;
-        margin-bottom: 2em;
+        width: 338px;
+        margin: 0em auto 2em;
     }
     ul.activities-list {
         margin-bottom: 3em;
@@ -192,6 +192,11 @@
     ul.leader-list>li:first-child,
     ul.leader-list>li:last-child {
         border: none;
+        display: inline-block;
+    }
+    ul.leader-list>li:nth-child(2),
+    ul.leader-list>li:nth-child(3) {
+        display: inline-block;
     }
     .contact {
         display: none;
@@ -442,8 +447,7 @@
         grid-template-columns: auto auto auto;
     }
     ul.leader-list>li {
-        display: flex;
-        padding: 3em;
+        display: flex !important;
     }
     ul.leader-list>li:first-child {
         border-right: 1px solid #464343;

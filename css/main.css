@@ -821,6 +821,8 @@
                 section.banner {
                     background-color: #d4d1d1;
                     color: #343434;
+                    background-image: url("../images/bg-banner.jpg");
+                    background-size: cover;
                 }
                 
                 .banner-content {
@@ -845,6 +847,7 @@
                 section.slide {
                     background-color: #343434;
                     position: relative;
+                    background-image: url("../images/bg-slide1.jpg");
                 }
                 
                 .slide-content {
