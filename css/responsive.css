@@ -42,6 +42,11 @@
     .nav-mobile>i {
         color: white;
     }
+    .ul.project-images>li {
+        cursor: pointer;
+        width: 203px;
+        height: 130px;
+    }
     ul.list-icon li {
         width: 20.28%;
     }
