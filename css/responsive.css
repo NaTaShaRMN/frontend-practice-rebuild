@@ -42,6 +42,9 @@
     .nav-mobile>i {
         color: white;
     }
+    .mySlides img {
+        object-fit: contain;
+    }
     .ul.project-images>li {
         cursor: pointer;
         width: 203px;
@@ -291,6 +294,9 @@
 @media screen and (min-width:767px) {
     .contact {
         display: flex;
+    }
+    .mySlides img {
+        object-fit: cover;
     }
     .address {
         display: inline-block;

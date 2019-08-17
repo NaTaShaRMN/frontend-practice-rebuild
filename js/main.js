@@ -115,3 +115,76 @@ function showSlide(n) {
     arrDots[slideIndex - 1].className += " visited";
 
 }
+
+
+/// list image 
+
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+// Close the Modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+//showSlides(slideIndexs);
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndexs += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndexs = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+        slideIndexs = 1
+    }
+    if (n < 1) {
+        slideIndexs = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexs - 1].style.display = "block";
+    dots[slideIndexs - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+
+
+// feedback 
+var feedbackIndex = 1;
+
+function plusFeedback(n) {
+    showFeedback(feedbackIndex += n)
+}
+
+function currentFeedback(n) {
+    showFeedback(feedbackIndex = n);
+}
+
+function showFeedback(n) {
+    var feedbackText = document.querySelectorAll(".feedback-content");
+    var feedbackImage = document.querySelectorAll(".feedback-person>li>img");
+    if (n > feedbackImage.length) {
+        feedbackIndex = 1;
+    }
+    if (n < 1) {
+        feedbackIndex = feedbackImage.length;
+    }
+    for (let i = 0; i < feedbackImage.length; i++) {
+        feedbackImage[i].className = feedbackImage[i].className.replace(" opimize", "");
+    }
+    for (let i = 0; i < feedbackText.length; i++) {
+        feedbackText[i].style.display = "none";
+    }
+    feedbackImage[feedbackIndex - 1].className += " opimize";
+    feedbackText[feedbackIndex - 1].style.display = "block";
+}

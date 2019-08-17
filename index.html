@@ -150,13 +150,60 @@
                             <li>Photography</li>
                         </ul>
                         <ul class="project-images">
-                            <li><img src="images/project1.jpg" alt=""></li>
-                            <li><img src="images/project2jpg.jpg" alt=""></li>
-                            <li><img src="images/project6.png" alt=""></li>
-                            <li><img src="images/project4.jpg" alt=""></li>
-                            <li><img src="images/project5.jpg" alt=""></li>
-                            <li><img src="images/project6.jpg" alt=""></li>
+                            <li onclick="openModal(); currentSlide(1);"><img src="images/project1.jpg" alt=""></li>
+                            <li onclick="openModal(); currentSlide(2);"><img src="images/project2jpg.jpg" alt=""></li>
+                            <li onclick="openModal(); currentSlide(3);"><img src="images/project6.png" alt=""></li>
+                            <li onclick="openModal(); currentSlide(4);"><img src="images/project4.jpg" alt=""></li>
+                            <li onclick="openModal(); currentSlide(5);"><img src="images/project5.jpg" alt=""></li>
+                            <li onclick="openModal(); currentSlide(6);"><img src="images/project6.jpg" alt=""></li>
                         </ul>
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 6</div>
+                                    <img src="images/project1.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 6</div>
+                                    <img src="images/project2jpg.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 6</div>
+                                    <img src="images/project6.png" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 6</div>
+                                    <img src="images/project4.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">5 / 6</div>
+                                    <img src="images/project5.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">6 / 6</div>
+                                    <img src="images/project6.png" style="width:100%">
+                                </div>
+
+                                <!-- Next/previous controls -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- Caption text -->
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+
+                                <!-- Thumbnail image controls -->
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -375,20 +422,70 @@
             <section class="feedback">
                 <div class="container">
                     <div class="feedback-container">
-                        <div class="feedback-content">
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
+                            <h5>Professor X</h5>
+                            <small>Owner, Muse Web</small>
+                            <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
+                            <h5>NaTaSha.Jr</h5>
+                            <small>Owner, Muse Web</small>
+                            <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
                             <h5>Janey Cramer</h5>
                             <small>Owner, Muse Web</small>
                             <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
+                            <h5>JMessi</h5>
+                            <small>Owner, Muse Web</small>
+                            <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
+                            <h5>Ronaldo</h5>
+                            <small>Owner, Muse Web</small>
+                            <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
+                            <h5>Nguyen Tuan</h5>
+                            <small>Owner, Muse Web</small>
+                            <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="feedback-content fade">
+                            <span class="prev-feedback" onclick="plusFeedback(-1);"><i class="fas fa-chevron-left"></i></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error debitis quis nobis ducimus eaque, hic temporibus. Soluta distinctio voluptates suscipit dolore vitae. Mollitia eaque rem, commodi accusamus distinctio harum est!</p>
+                            <h5>Tuan Nguyen</h5>
+                            <small>Owner, Muse Web</small>
+                            <p class="read-more">Read more ...</p>
+                            <span class="next-feedback" onclick="plusFeedback(1)"><i class="fas fa-chevron-right"></i></span>
                         </div>
                         <ul class="feedback-person">
-                            <li><img src="images/human.jpg" alt=""></li>
-                            <li><img src="images/human.jpg" alt=""></li>
-                            <li><img src="images/human.jpg" alt=""></li>
-                            <li><img class="opimize" src="images/human.jpg" alt=""></li>
-                            <li><img src="images/human.jpg" alt=""></li>
-                            <li><img src="images/human.jpg" alt=""></li>
-                            <li><img src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(1)" src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(2)" src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(3)" src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(4)" class="" src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(5)" src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(6)" src="images/human.jpg" alt=""></li>
+                            <li><img onclick="currentFeedback(7)" src="images/human.jpg" alt=""></li>
                         </ul>
                     </div>
                 </div>
@@ -539,6 +636,7 @@
     <script>
         showSlide(1);
         loopSlide(1);
+        showFeedback(4);
 
 
         var acc = document.querySelectorAll(".awesome-tab-item.odd");
