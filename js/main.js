@@ -32,36 +32,36 @@ function imageHover() {
 
 // ramdom banner
 
-// function ramdomBanner() {
-//     var num = Math.floor(Math.random() * 3) + 1;
-//     var head = "../image/bg-banner";
-//     var tail = ".jpg";
-//     var urlImage = head + num.toString() + tail;
-//     console.log(urlImage);
-//     var bgBanner = document.querySelector("section.banner");
-//     bgBanner.style.backgroundImage = "url(urlImage)";
-// }
-// ramdomBanner();
 function ramdomBanner() {
     var num = Math.floor(Math.random() * 3) + 1;
+    var head = "../images/bg-banner";
+    var tail = ".jpg";
+    var urlImage = head + num.toString() + tail;
+    //console.log(urlImage);
     var bgBanner = document.querySelector("section.banner");
-    switch (num) {
-        case 1:
-            bgBanner.style.backgroundImage = "url('../images/bg-banner1.jpg')";
-            break;
-        case 2:
-            bgBanner.style.backgroundImage = "url('../images/bg-banner2.jpg')";
-            break;
-        case 3:
-            bgBanner.style.backgroundImage = "url('../images/bg-banner3.jpg')";
-            break;
-        default:
-            break;
-    }
-
-
-
+    bgBanner.style.backgroundImage = "url(" + urlImage + ")";
 }
+// ramdomBanner();
+// function ramdomBanner() {
+//     var num = Math.floor(Math.random() * 3) + 1;
+//     var bgBanner = document.querySelector("section.banner");
+//     switch (num) {
+//         case 1:
+//             bgBanner.style.backgroundImage = "url('../images/bg-banner1.jpg')";
+//             break;
+//         case 2:
+//             bgBanner.style.backgroundImage = "url('../images/bg-banner2.jpg')";
+//             break;
+//         case 3:
+//             bgBanner.style.backgroundImage = "url('../images/bg-banner3.jpg')";
+//             break;
+//         default:
+//             break;
+//     }
+
+
+
+// }
 setInterval(ramdomBanner, 3000);
 
 // slide top
